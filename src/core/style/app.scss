@@ -1,0 +1,8 @@
+$bootstrap-sass-asset-helper: "";
+$enable-flex: true;
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+@import 'variables';
+
+@import 'general';

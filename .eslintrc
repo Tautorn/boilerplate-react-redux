@@ -1,0 +1,58 @@
+parser: babel-eslint
+
+plugins:
+  - jest
+  - redux-saga
+
+extends:
+  - airbnb
+  - plugin:jest/recommended
+
+env:
+  es6: true
+  browser: true
+  node: true
+  jest/globals: true
+
+rules:
+  array-bracket-spacing: [error]
+  global-require: off
+  semi: [error, never]
+  comma-dangle: [error, never]
+  comma-style: [error, last]
+  computed-property-spacing: [error, never]
+  func-call-spacing: [error, never]
+  id-length: [error, { "exceptions": ["t"] }]
+  class-methods-use-this: off
+  key-spacing: [error]
+  consistent-return: off
+  no-underscore-dangle: [error, { allowAfterThis: true }]
+  no-multi-assign: off
+  no-param-reassign: off
+  no-magic-numbers: [error]
+  no-constant-condition: [error]
+  no-inline-comments: [error]
+  no-lonely-if: [error]
+  no-mixed-operators: [error]
+  no-unneeded-ternary: [error]
+  no-else-return: [error]
+  no-confusing-arrow: off
+  no-unused-expressions: [error, {allowShortCircuit: true}]
+  yoda: [error]
+  complexity: [error, 3]
+  max-depth: [error, 1]
+  max-lines: [error, 300]
+  max-nested-callbacks: [error, 3]
+  max-params: [error, 4]
+  newline-per-chained-call: [error]
+  react/prefer-stateless-function: off
+  react/jsx-filename-extension: [1, { "extensions": [".spec.js", ".jsx"] }]
+  react/forbid-prop-types: off
+  react/require-default-props: warn
+  react/no-find-dom-node: off
+  import/no-extraneous-dependencies: [error, {devDependencies: true}]
+  import/prefer-default-export: off
+  import/no-named-as-default: off
+
+settings:
+  import/resolver: webpack
