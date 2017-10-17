@@ -10,13 +10,11 @@ class Main extends Component {
 
     return (
       <main className="main">
-        <div className="rw-container">
-          <div className="container-fluid">
-            <Link to="/shoes">
-              <h2>Clique aqui para visualizar os calçados</h2>
-            </Link>
-            {children}
-          </div>
+        <div className="container-fluid">
+          <Link to="/shoes">
+            <h2>Clique aqui para visualizar os calçados</h2>
+          </Link>
+          {children}
         </div>
       </main>
     )
