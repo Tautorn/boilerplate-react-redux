@@ -37,12 +37,8 @@ module.exports = {
         use: [
           { loader: 'style-loader' },
           { loader: 'css-loader' },
-          { loader: 'sass-loader',
-            options: {
-              data: '@import "variables";',
-              includePaths: [path.resolve(__dirname, './src/core/style/')]
-            }
-          }]
+          { loader: 'sass-loader' }
+        ]
       },
       { test: /\.js(x)?$/, loader: 'babel-loader', exclude: /node_modules/ }
     ]
